@@ -1,3 +1,4 @@
+/* Reset and global styles */
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +27,6 @@ header h1 {
     font-size: 3rem;
     color: #fff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-
 }
 
 nav ul {
@@ -45,63 +45,6 @@ nav ul li a {
     font-size: 1.2rem;
 }
 
-.intro {
-    padding: 20px;
-    text-align: center;
-}
-
-.intro h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.menu {
-    text-align: center;
-    padding: 20px;
-}
-
-.menu-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.menu-buttons button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.specials {
-    padding: 40px;
-    text-align: center;
-}
-
-.special-items {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.special-items .item {
-    width: 200px;
-}
-
-.special-items img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-footer {
-    padding: 20px;
-    text-align: center;
-    background-color: #111;
-}
 .specialities {
     text-align: center;
     margin: 50px 0;
@@ -116,15 +59,48 @@ footer {
     margin-bottom: 40px;
 }
 
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: (3, 1fr); 
+    grid-gap: 20px; 
+    padding: 20px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 20%; 
+    height: auto;
+    max-width: 100%; 
+    border-radius: 10px;
+}
+
+.grid-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+
+}
+
 .grid-container {
     display: grid;
     gap: 10px;
-
+  
     padding: 10px;
   }
   
   .grid-item {
-
+  
     text-align: center;
     padding: 20px;
     font-size: 30px;
