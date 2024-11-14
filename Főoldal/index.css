@@ -87,6 +87,7 @@ nav ul li a:hover {
 .specialities {
     text-align: center;
     margin: 50px 0;
+    color: #fff;
 }
 
 .specialities h2 {
@@ -98,26 +99,7 @@ nav ul li a:hover {
     margin-bottom: 40px;
 }
 
-.grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
 
-.grid-item {
-    flex: 0 0 250px;
-    text-align: center;
-}
-
-.grid-item img {
-    width: 100%;
-    height: auto;
-}
-
-.grid-item p {
-    margin-top: 10px;
-}
 
 .intro {
     background-color: #f9f9f9;
@@ -252,4 +234,50 @@ footer {
 .ido{
     
 
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery__item--1 {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.gallery__item--2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 9;
+}
+
+.gallery__item--3 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 9;
+}
+
+.gallery__item--4 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 7;
+}
+
+.gallery__item--5 {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 8;
+    grid-row-end: 9;
 }
