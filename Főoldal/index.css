@@ -65,6 +65,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    background-color: #333;
 
 }
 
@@ -131,10 +132,6 @@ p {
     color: white;
 }
 
-section.menu {
-    background-color: #111;
-    padding: 50px 0;
-}
 
 h3 {
     font-size: 2rem;
@@ -165,10 +162,11 @@ h4 {
     color: #000;
 }
 
-.container {
+.container1 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #555;
 }
 .menuszoveg {
     text-align: center;
@@ -231,15 +229,13 @@ footer {
 .proba{
     color: #fff;
 }
-.ido{
-    
 
-}
 .gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
     grid-gap: 15px;
+    background-color: #292929;
 }
 .gallery__img {
     width: 100%;
@@ -274,10 +270,38 @@ footer {
 }
 
 .gallery__item--5 {
-    width: 100%;
-    height: 100%;
-    grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: 8;
+    
+    grid-column-start: 8;
+    grid-column-end: 6;
+    grid-row-start: 7;
     grid-row-end: 9;
 }
+#nyitavtartas
+{
+  margin: auto;
+  width: 300px;
+  height: 40px;
+  margin-top: 2%;
+ 
+ 
+}
+#Asztalfoglalás
+{
+  float: right;
+  width: 35%;
+  ;
+  text-align: left;
+   
+ 
+}
+.specialities {
+    background-color: #555; 
+}
+
+.specialities h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
