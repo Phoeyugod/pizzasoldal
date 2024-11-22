@@ -61,27 +61,8 @@ nav ul li a {
 nav ul li a:hover {
     border-bottom: 2px solid #fff;
 }
-.történetünk {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: #333;
 
-}
 
-.left-column {
-    flex: 1;
-    text-align: right;
-    padding-right: 20px;
- 
-}
-
-.right-column {
-    flex: 2;
-    text-align: left;
-    line-height: 1.5;
-    
-}
 
 
 
@@ -162,16 +143,15 @@ h4 {
     color: #000;
 }
 
-.container1 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #555;
+.container1 { 
+    
+
 }
 .menuszoveg {
     text-align: center;
     width: 60%;
     margin: 0 auto;
+    padding: 20px;
 }
 
 * {
@@ -288,16 +268,12 @@ footer {
 #Asztalfoglalás
 {
   float: right;
-  width: 35%;
-  ;
+  width: 30%;
   text-align: left;
+
    
  
 }
-.specialities {
-    background-color: #555; 
-}
-
 .specialities h2 {
     color: #fff;
     font-size: 2rem;
@@ -305,3 +281,44 @@ footer {
 }
 
 
+#szurke {
+    color: rgb(161, 161, 161);
+    border-bottom: 2px solid rgba(168, 147, 147, 0.596);
+}
+.szurke {
+    background-color: rgb(49, 48, 48);
+}
+.szoveg {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 250px;
+    font-size:x-large;
+}
+#baltet {
+    width: 47%;
+    float: left;
+    text-align: right;
+}
+#jobbtet {
+    width: 50%;
+    float: right;
+    text-align: left;
+}
+.szurke {
+    background-color: rgb(49, 48, 48);
+}
+
+.specialities h2 {
+    color: #fff;
+}
+
+.gallery {
+    
+    background-color: rgb(49, 48, 48);
+}
+.foglal{
+    color : #fff;
+    font-size: x-large;
+}
