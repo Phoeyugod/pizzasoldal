@@ -143,10 +143,7 @@ h4 {
     color: #000;
 }
 
-.container1 { 
-    
 
-}
 .menuszoveg {
     text-align: center;
     width: 60%;
@@ -206,6 +203,7 @@ footer {
     grid-template-rows: repeat(8, 5vw);
     grid-gap: 15px;
     background-color: #292929;
+    
 }
 .gallery__img {
     width: 100%;
@@ -248,11 +246,12 @@ footer {
 }
 #nyitavtartas
 {
-  margin: auto;
-  width: 300px;
+  margin-left:35% ;
+  width: 20%;
   height: 40px;
   margin-top: 2%;
- 
+  text-align: left;
+  
  
 }
 #Asztalfoglalás
@@ -264,13 +263,12 @@ footer {
   
 }
 .fenseg{
-    font-size:30px;
+    font-size:x-large;
 }
 .kulon
 {
-    margin-right: 30%;
-    margin-left: 5% ;
-    font: x-large;
+    margin-right: 50%;
+    font-size: larger;
 }
 .specialities h2 {
     color: #fff;
@@ -319,10 +317,23 @@ footer {
 .foglal{
     color : #fff;
     font-size: x-large;
-    margin-left: 5%;
+    
 }
 footer {
     clear: both;
     margin-top: 500px;
     
+}
+.izek{
+    color: #b9b9b9;
+}
+.gallery figure {
+    text-align: center;
+    color: white;
+}
+
+.gallery figcaption {
+    font-size: 1rem;
+    color: #ccc;
+    text-align: center;
 }
