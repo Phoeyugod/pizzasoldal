@@ -14,8 +14,8 @@ body {
 
 header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    
     text-align: center;
     background-image: url('/Képek/szelet.jpg');
     background-size: cover;
@@ -301,17 +301,17 @@ footer {
     padding-bottom: 5%;
 }
 .szoveg {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        margin: 0 auto; 
-        padding: 20px; 
-        text-align: center;
-        line-height: 1.6; 
-        font-size: 1rem; 
-    
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left; 
+    line-height: 1.6;
+    font-size: 1rem;
+        
 }
 #baltet {
     width: 40%;
@@ -396,66 +396,6 @@ buttons button {
     width: 100%;
     margin: 10px 0;
 }
-@media (max-width: 768px) {
-    header {
-        height: 200px;
-        padding: 10px;
-    }
-
-
-    .szoveg {
-        width: 90%;
-        padding: 20px 0;
-    }
-
-    .buttons button {
-        width: 100%;
-        padding: 15px;
-        font-size: 1rem;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
-
-    #Asztalfoglalás {
-        width: 100%;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    #nyitavtartas {
-        width: 100%;
-        margin: 20px auto;
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-    }
+#baltet, #jobbtet {
+    width: 49%;
 }
-@media (max-width: 480px) {
-    h1, h2, h3, h4 {
-        font-size: 1.2rem;
-    }
-
-    .gallery__item {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .szoveg {
-        padding: 10px;
-    }
-
-    .buttons button {
-        font-size: 0.8rem;
-        padding: 10px;
-    }
-
-
-
-    #nyitavtartas {
-        font-size: 0.8rem;
-    }
-}
-
