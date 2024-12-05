@@ -17,7 +17,7 @@ header {
     flex-direction: row;
     
     text-align: center;
-    background-image: url('/Képek/szelet.jpg');
+    background-image: url('Képek/szelet.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
