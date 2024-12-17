@@ -23,6 +23,7 @@ header {
     height: 400px;
     color: #fff;
     padding: 20px;
+    
 }
 .header-content {
     padding-top: 30px;
@@ -398,4 +399,87 @@ buttons button {
 }
 #baltet, #jobbtet {
     width: 49%;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 300px;
+        flex-direction: column; 
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 10vw);
+    }
+
+    #nyitavtartas, #Asztalfoglalás {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 200px;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 20vw);
+    }
+
+    .szoveg {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    #baltet, #jobbtet {
+        width: 100%;
+    }
+
+    .buttons button {
+        padding: 15px 50px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 25vw);
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }

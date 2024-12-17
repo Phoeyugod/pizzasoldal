@@ -8,17 +8,74 @@
 </head>
 <body>
     <header>
+        <style>
+            .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 30px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-menu li {
+            margin: 0 10px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            
+        }
+
+        @media (max-width: 1024px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: white;
+                width: 200px;
+                
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-menu li {
+                margin: 10px 0;
+                text-align: center;
+            }
+            .nav-menu a {
+                color: black !important;
+            }
+
+            .nav-menu hr {
+                margin: 0;
+            }
+        }
+        </style>
         <h1>Pizzéria</h1>
         <div class="header-content">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
             <nav>
-                <ul>
-                    <li><a href="#">Kezdőlap  /</a></li>
-                    <li><a href="#">Menü  /</a></li>
-                    <li><a href="#">Rólunk  /</a></li>
+                <ul class="nav-menu">
+                    <li><a href="#">Kezdőlap</a></li>
+                    <hr>
+                    <li><a href="#">Menü</a></li>
+                    <hr>
+                    <li><a href="#">Rólunk</a></li>
+                    <hr>
                     <li><a href="#">Kapcsolat</a></li>
                 </ul>
             </nav>
-        </div>
     </header>
     <div>
         <div class="szurke">
@@ -112,7 +169,12 @@
     <p>Az oldalt a <a href="https://www.webnode.hu?utm_source=text&amp;utm_medium=footer&amp;utm_campaign=free1&amp;utm_content=wnd2" rel="noopener nofollow" target="_blank">Webnode</a> működteti</span></p>
  </footer>
 
-
+ <script>
+    function toggleMenu() {
+        const navMenu = document.querySelector('.nav-menu');
+        navMenu.classList.toggle('active');
+    }
+</script>
 
 </body>
 </html>
